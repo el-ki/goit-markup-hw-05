@@ -215,6 +215,7 @@ img {
 .address-mail-svg {
   margin-right: 10px;
   fill: var(--main-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-mail:hover .address-mail-svg,
@@ -502,7 +503,8 @@ img {
   border: 1px solid var(--social-link-color);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover {
@@ -654,6 +656,9 @@ img {
 .galery-button:focus {
   color: var(--color-dark-theme);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .picture {
